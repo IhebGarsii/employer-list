@@ -1,0 +1,104 @@
+table {
+  border: 2px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 1.1rem;
+  border-radius: 10%;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: #009879;
+  border: none;
+  text-align: center;
+  color: white;
+}
+.span {
+  display: none;
+}
+table tbody tr:nth-child(even) {
+  background-color: #e5e5e5;
+}
+table tbody tr {
+  font-weight: bold;
+  transition: 0.2s ease;
+  cursor: default;
+}
+
+table tbody tr:hover {
+  color: rgb(31, 189, 31);
+}
+
+@media screen and (max-width: 1110px) {
+  table {
+    border: 0;
+
+    width: 70vw;
+  }
+
+  .small {
+    display: flex;
+    justify-content: space-between;
+  }
+  .span {
+    display: block;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  table td::before {
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}

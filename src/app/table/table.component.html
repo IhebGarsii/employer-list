@@ -1,0 +1,31 @@
+<table>
+  <thead>
+    <tr>
+      <th *ngFor="let head of headArray; let i; index">{{ head }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      *ngFor="
+        let item of data
+          | paginate
+            : { itemsPerPage: tableSize, currentPage: page, totalItems: count };
+        let i = index
+      "
+    >
+      <td *ngFor="let head of headArray">
+        <div class="small">
+          <span class="span"> {{ head }} </span>
+          <span> {{ item[head] }}</span>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div class="pagination">
+  <pagination-controls
+    previousLabel="Perv"
+    nextLabel="Next"
+    (pageChange)="ontableDataChange($event)"
+  ></pagination-controls>
+</div>

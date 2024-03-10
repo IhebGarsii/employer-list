@@ -1,0 +1,16 @@
+* {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    176deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(215, 213, 213, 1) 14%
+  );
+}
+.user-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}

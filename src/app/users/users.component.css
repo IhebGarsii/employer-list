@@ -1,0 +1,10 @@
+.table-container {
+ 
+
+  max-width: 1200px; /* Set your desired maximum width */
+  width: 100%;
+  padding: 20px;
+
+  box-sizing: border-box;
+}
+
